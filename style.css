@@ -1,0 +1,38 @@
+.jefferson-blue {
+    background-color: #232D4B;
+}
+
+.virginia-orange {
+    color: #ff9100;
+}
+
+.heebo {
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .panel-right {
+        background-color: #232D4B;
+        width: 8.3%;
+    }
+    .panel-left {
+        background-color: #232D4B;
+        width: 8.3;
+    }
+    .panel-center {
+        width: 83.4%;
+    }
+}
+
+.panel-right {
+    background-color: #232D4B;
+    width: 8.3%;
+}
+.panel-left {
+    background-color: #232D4B;
+    width: 8.3;
+}
+.panel-center {
+    width: 100%;
+}
