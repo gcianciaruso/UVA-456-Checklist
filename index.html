@@ -17,12 +17,15 @@
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
-  <body class="gradient" onload="loadStorage()">
+  <body class="gradient" onload="startUp()">
     <nav>
         <div class="row pad-vertical">
             <h1 class="virginia-orange text-center" style="font-size: 4em;">UVA 123 Checklist</h1>
         </div>   
     </nav>
+    <div id="progress-div" class="progress center-col" style="height: 2em;">
+      <div id="progress-bar" class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 10%; font-family: boomer;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0/123</div>
+    </div>
     <div class="row pad-vertical">
         <div class="col-1"></div>
         <div class="col-5">
