@@ -14,25 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Heebo:wght@500&display=swap" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
-  <body>
+  <body class="gradient" onload="loadStorage()">
     <nav>
-        <div class="row jefferson-blue pad-vertical">
-            <h1 class="virginia-orange Heebo">UVA 123 Checklist</h1>
+        <div class="row pad-vertical">
+            <h1 class="virginia-orange text-center" style="font-size: 4em;">UVA 123 Checklist</h1>
         </div>   
     </nav>
     <div class="row pad-vertical">
         <div class="col-1"></div>
         <div class="col-5">
             <div class="accordion" id="accordionExample1">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Academic
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
-                    <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Academic
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                  <div class="accordion-body">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="1">
                             <label class="form-check-label" for="1">

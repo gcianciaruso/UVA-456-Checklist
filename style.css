@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "boomer";
+    src: url(./static/boomer_tantrum/Boomer\ Tantrum.otf) format("opentype");
+}
+
 .jefferson-blue {
     background-color: #232D4B;
 }
@@ -6,9 +11,23 @@
     color: #ff9100;
 }
 
-.heebo {
-    font-family: 'Heebo', sans-serif;
+h1 {
+    font-family: boomer;
 }
+
+.gradient {
+
+    /* can be treated like a fallback */
+    background-color: #232D4B;
+  
+    /* will be "on top", if browser supports it */
+    background-image: linear-gradient(rgba(35,45,75,1) 0%, rgba(47,57,85,1) 29%, rgba(117,122,138,1) 69%);
+  
+    /* these will reset other properties, like background-position, but it does know what you mean */
+    background: #232D4B;
+    background: linear-gradient(rgba(35,45,75,1) 0%, rgba(47,57,85,1) 29%, rgba(117,122,138,1) 69%);
+  
+  }
 
 .pad-vertical {
     padding-top: 1rem;
@@ -18,6 +37,10 @@
 .margin-vertical {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+body {
+    min-height: 100vh;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
