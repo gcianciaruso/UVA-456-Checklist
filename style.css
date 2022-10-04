@@ -53,7 +53,7 @@ table {
 
 @font-face {
     font-family: "boomer";
-    src: url(./static/boomer_tantrum/Boomer\ Tantrum.otf) format("opentype");
+    src: url(./static/fonts/boomer_tantrum/Boomer\ Tantrum.otf) format("opentype");
 }
 
 .jefferson-blue {
