@@ -7,8 +7,9 @@ function loadChecks() {
 }
 
 function loadProgressBar() {
+    // checks completed = num of ele in local storage
+    // will have to change if add other data to local storage
     var checksComplete = localStorage.length;
-    checksComplete
     var progress = Math.round((checksComplete/123)*100);
     $("#progress-bar").css("width", String(progress)+"%");
     $("#progress-bar").text(String(checksComplete)+"/123");

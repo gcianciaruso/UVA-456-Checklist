@@ -51,17 +51,53 @@ table {
 
 /* CSS Reset End */
 
+/* include padding and border in dimensions */
+* {
+    box-sizing: border-box;
+}
+
+/* import font */
 @font-face {
     font-family: "boomer";
     src: url(./static/fonts/boomer_tantrum/Boomer\ Tantrum.otf) format("opentype");
 }
+h2, label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: boomer;
+}
 
+/* UVA colors */
 .jefferson-blue {
     background-color: #232D4B;
 }
-
 .virginia-orange {
     color: #ff9100;
+}
+
+/* Responsive design */
+/* for mobile phones and tablets: */
+.col-5 {
+    width: 83.33%;
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    margin-top: 1em;
+}
+.col-1 {
+    width: 0;
+}
+/* for laptops and larger screens: */
+@media only screen and (min-width: 768px) {
+    .col-5 {
+        width: 41.67%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+    .col-1 {
+        width: 8.33%;
+    }
 }
 
 .center-col {
@@ -69,12 +105,8 @@ table {
     margin-right: 9%;
 }
 
-h1 {
-    font-family: boomer;
-}
-
+/* background */
 .gradient {
-
     /* can be treated like a fallback */
     background-color: #232D4B;
   
@@ -84,8 +116,7 @@ h1 {
     /* these will reset other properties, like background-position, but it does know what you mean */
     background: #232D4B;
     background: linear-gradient(rgba(35,45,75,1) 0%, rgba(47,57,85,1) 29%, rgba(117,122,138,1) 69%);
-  
-  }
+}
 
 .pad-vertical {
     padding-top: 1rem;
@@ -100,18 +131,3 @@ h1 {
 body {
     min-height: 100vh;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
-    .panel-right {
-        background-color: #232D4B;
-        width: 8.3%;
-    }
-    .panel-left {
-        background-color: #232D4B;
-        width: 8.3;
-    }
-    .panel-center {
-        width: 83.4%;
-    }
-} */
