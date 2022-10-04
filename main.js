@@ -10,7 +10,6 @@ function loadProgressBar() {
     var checksComplete = localStorage.length;
     checksComplete
     var progress = Math.round((checksComplete/123)*100);
-    console.log(progress);
     $("#progress-bar").css("width", String(progress)+"%");
     $("#progress-bar").text(String(checksComplete)+"/123");
 }
